@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <!-- Include Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body >
+    
+    <div id="wc" >
+      <h1>Writer Club</h1>
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="WebPage.html"><i class="fas fa-home"> Home</i></a>
+        <a href="Login.html"><i class="fas fa-sign-in-alt"> Login</i></a>
+        <a href="Write.html"><i class="fas fa-pen"> Write a Story</i></a>
+        <a href="Read.html"><i class="fas fa-book"> Read Stories</i></a>
+        <a href="Registration_form.html"><i class="fas fa-user-plus"> Registration</i></a>
+        <a href="mailto:abc@googel.com"><i class="fas fa-envelope"> Contact Us</i></a>
+        <img src="Images/m205-petrol-mabled-a.jpg" alt="Pen" >
+      
+      </div>
+      <div class="main0">
+        <h2><u>Registration form</u></h2>
+      </div>
+      <div>
+        <form>
+      <div class="main1">
+       
+        <table>
+          <tr>
+              <td>First name:</td>
+              <td><input type="text" name="fname" placeholder="First Name" required/></td>
+          </tr>
+          <tr>
+              <td>Last name:</td>
+              <td><input type="text" name="lname" placeholder="Last Name" required/></td>
+          </tr>
+          <tr>
+              <td>Email:</td>
+              <td><input type="email" name="email" placeholder="abc@gmail.com" required></td>
+          </tr>
+          <tr>
+              <td>Phone Number:</td>
+              <td><input type="tel" name="phone" required></td>
+          </tr>
+          <tr>
+              <td>Upload Your Photo:</td>
+              <td><input type="file" name="photo" ></td>
+          </tr>
+          <tr>
+              <td>Gender:</td>
+              <td>
+                  <input type="radio" name="gender" value="Male" required> Male
+                  <input type="radio" name="gender" value="Female" required> Female
+              </td>
+          </tr>
+          <tr>
+              <td>Date Of Birth:</td>
+              <td><input type="date" name="birthday" required></td>
+          </tr>
+          <tr>
+            <td>Occupation:</td>
+            <td><input type="text" name="occupation" /></td>
+        </tr>
+          <tr>
+              <td>Region:</td>
+              <td>
+                  <datalist id="Region_List">
+                      <option value="Bangladesh"></option>
+                      <option value="India"></option>
+                      <option value="Japan"></option>
+                      <option value="China"></option>
+                  </datalist>
+                  <input type="text" name="Region" list="Region_List" />
+              </td>
+          </tr>
+          <tr>
+              <td>Set Your Active time:</td>
+              <td><input type="time" name="alarmTime"></td>
+          </tr>
+          <tr>
+              <td>Language:</td>
+              <td>
+                  <input type="checkbox" id="bangla" name="bangla" value="Bangla" />
+                  <label for="bangla"> Bangla</label>
+                  <input type="checkbox" id="english" name="english" value="English" />
+                  <label for="english"> English</label><br>
+                  <input type="checkbox" id="spanish" name="spanish" value="Spanish" />
+                  <label for="spanish"> Spanish</label>
+                  <input type="checkbox" id="french" name="french" value="French" />
+                  <label for="french"> French</label>
+              </td>
+          </tr>
+          <tr>
+              <td>Favorite Category:</td>
+              <td>
+                  <select name="Survey">
+                      <optgroup label="Fantasy ">
+                          <option value="High Fantasy">High Fantasy</option>
+                          <option value="Urban Fantasy">Urban Fantasy</option>
+                      </optgroup>
+                      <optgroup label="Science Fiction">
+                          <option value="Cyberpunk">Cyberpunk</option>
+                          <option value="Dystopian Fiction">Dystopian Fiction</option>
+                      </optgroup>
+                      <optgroup label="Historical Fiction">
+                          <option value="Ancient History">Ancient History</option>
+                          <option value="20th Century hs Fiction">20th Century hs Fiction</option>
+                      </optgroup>
+                  </select>
+              </td>
+          </tr>
+      </table>
+   
+    </div>
+
+      <div class="main2">
+     
+        <table>
+          <tr>
+              <td>Choose a Color:</td>
+              <td><input type="color" name="bgcolor" /></td>
+          </tr>
+          <tr>
+              <td>Social Site URL:</td>
+              <td><input type="url" name="yourSite" placeholder="url link" /></td>
+          </tr>
+          <tr>
+              <td>Select Submission Time:</td>
+              <td><input type="datetime-local" name="localDateTime"  /></td>
+          </tr>
+          <tr>
+              <td>Rating Us:</td>
+              <td><input type="range" name="points" min="0" max="10" /></td>
+          </tr>
+          <tr>
+              <td>Why do you want to join us?:</td>
+              <td> <textarea name="Comment" id="" cols="20" rows="4"></textarea></td>
+          </tr>
+          <tr>
+            <td>Step:</td>
+            <td><input type="number" name="points" step="2" /></td>
+        </tr>
+          <tr>
+              <td>Write Like [A-Za-z0-9]{6}:</td>
+              <td><input type="text" pattern="[A-Za-z0-9]{6}" /></td>
+          </tr>
+          <tr>
+              <td>Set a user Name:</td>
+              <td><input type="text" name="firstname" required /></td>
+          </tr>
+          <tr>
+              <td>Set a user Password:</td>
+              <td><input type="password" name="password" required/></td>
+          </tr>
+          <tr>
+              <td>Confirm Password:</td>
+              <td><input type="password" name="confirmPassword" required/></td>
+          </tr>
+      
+
+      </table>   
+    
+      </div>
+      <div class="main3">
+      
+    <table border="1" align="center">
+    <tr>
+      <td><button >Submit</button></td>
+        <td>   <button type="reset" value="Reset" onclick="alert('Reset Successful')"/>Reset</td>
+            </tr>
+
+          </table>
+
+      </div>
+   
+    </form>
+          </div>
+</div>
+    <div class="footer" >© copyright WriterClub.com</div>
+    
+    </body>
+    </html>
